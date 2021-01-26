@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_codes">
+        <item>hin</item>
+        <item>eng</item>
+        <item>pan</item>
+        <item>bgc</item>
+        <item>bho</item>
+        <item>ori</item>
+        <item>ben</item>
+        <item>guj</item>
+        <item>mar</item>
+        <item>kan</item>
+        <item>tam</item>
+        <item>tel</item>
+        <item>mal</item>
+    </string-array>
+    <array name="language_colors">
+        <item>#0abf53</item>
+        <item>#00a4e4</item>
+        <item>#ff4f81</item>
+        <item>#ecb731</item>
+        <item>#59626a</item>
+        <item>#6a67ce</item>
+        <item>#00b2a9</item>
+        <item>#e01f3d</item>
+        <item>#543729</item>
+        <item>#004eaf</item>
+        <item>#2e9fff</item>
+        <item>#aea400</item>
+        <item>#a626aa</item>
+    </array>
+    <string-array name="language_names">
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Punjabi</item>
+        <item>Haryanvi</item>
+        <item>Bhojpuri</item>
+        <item>Oriya</item>
+        <item>Bengali</item>
+        <item>Gujarati</item>
+        <item>Marathi</item>
+        <item>Kannada</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Malayalam</item>
+    </string-array>
+    <string-array name="photo_options">
+        <item>Choose new photo</item>
+        <item>Remove current photo</item>
+    </string-array>
+    <string-array name="reason_codes">
+        <item>drugs</item>
+        <item>fake_news</item>
+        <item>fake_profile</item>
+        <item>harassment</item>
+        <item>hateful</item>
+        <item>ip_infringement</item>
+        <item>political_propaganda</item>
+        <item>pornography</item>
+        <item>spam</item>
+        <item>violence</item>
+        <item>weapons</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="reason_names">
+        <item>Drugs</item>
+        <item>Fake news</item>
+        <item>Fake profile</item>
+        <item>Harassment</item>
+        <item>Hateful</item>
+        <item>IP infringement</item>
+        <item>Political propaganda</item>
+        <item>Pornography</item>
+        <item>Spam</item>
+        <item>Violence</item>
+        <item>Weapons</item>
+        <item>Other</item>
+    </string-array>
+</resources>

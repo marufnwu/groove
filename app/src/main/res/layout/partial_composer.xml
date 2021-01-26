@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/composer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/emoji"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sticker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:icon="@drawable/ic_outline_emoji_emotions_24"
+        app:shapeAppearanceOverlay="@style/ButtonRoundedOverlay"
+        style="@style/IconOnlyButton.Outlined" />
+
+    <Button
+        android:id="@+id/sticker"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/input"
+        app:layout_constraintStart_toEndOf="@id/emoji"
+        app:icon="@drawable/ic_baseline_sticky_note_24"
+        app:shapeAppearanceOverlay="@style/ButtonRoundedOverlay"
+        style="@style/IconOnlyButton.Outlined" />
+
+    <com.vanniktech.emoji.EmojiEditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/composer_hint"
+        android:imeOptions="actionSend"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/submit"
+        app:layout_constraintStart_toEndOf="@id/sticker" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/input"
+        app:icon="@drawable/ic_baseline_send_24"
+        app:shapeAppearanceOverlay="@style/ButtonRoundedOverlay"
+        style="@style/IconOnlyButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

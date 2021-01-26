@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@+id/fragment_player_tabs">
+
+    <action
+        android:id="@+id/action_show_about"
+        app:destination="@id/fragment_about"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_clips"
+        app:destination="@id/fragment_player_tabs"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:popUpTo="@+id/fragment_player_tabs"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_show_clips_grid"
+        app:destination="@id/fragment_clip_grid"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_discover"
+        app:destination="@id/fragment_discover"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:popUpTo="@+id/fragment_discover"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_show_messages"
+        app:destination="@id/fragment_messages"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_comments"
+        app:destination="@id/fragment_comments"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_edit_clip"
+        app:destination="@id/fragment_edit_clip"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_edit_profile"
+        app:destination="@id/fragment_edit_profile"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_followers"
+        app:destination="@id/fragment_followers"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_news"
+        app:destination="@id/fragment_news"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_notifications"
+        app:destination="@id/fragment_notifications"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:popUpTo="@+id/fragment_notifications"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_show_photo_viewer"
+        app:destination="@id/fragment_photo_viewer"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_player_slider"
+        app:destination="@id/fragment_player_slider"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_profile"
+        app:destination="@id/fragment_profile"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_profile_self"
+        app:destination="@id/fragment_profile_self"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:popUpTo="@+id/fragment_profile_self"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_show_qr"
+        app:destination="@id/fragment_show_qr"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_qr_scanner"
+        app:destination="@id/fragment_scan_qr"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_request_verification"
+        app:destination="@id/fragment_request_verification"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_search"
+        app:destination="@id/fragment_search"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_show_threads"
+        app:destination="@id/fragment_threads"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:popUpTo="@id/fragment_threads"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/fragment_about"
+        android:name="com.groove.megaapp.fragments.AboutFragment" />
+
+    <fragment
+        android:id="@+id/fragment_clip_grid"
+        android:name="com.groove.megaapp.fragments.ClipGridFragment"
+        tools:layout="@layout/fragment_clip_grid">
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+        <argument
+            android:name="params"
+            app:argType="android.os.Bundle"
+            app:nullable="true" />
+
+        <argument
+            android:name="ads"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_comments"
+        android:name="com.groove.megaapp.fragments.CommentsFragment"
+        tools:layout="@layout/fragment_comments">
+
+        <argument
+            android:name="clip"
+            app:argType="integer" />
+
+        <deepLink app:uri=".*/comments?clip={clip}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_discover"
+        android:name="com.groove.megaapp.fragments.DiscoverFragment"
+        tools:layout="@layout/fragment_discover" />
+
+    <fragment
+        android:id="@+id/fragment_edit_clip"
+        android:name="com.groove.megaapp.fragments.EditClipFragment"
+        tools:layout="@layout/fragment_edit_clip">
+
+        <argument
+            android:name="clip"
+            app:argType="com.groove.megaapp.data.models.Clip" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_edit_profile"
+        android:name="com.groove.megaapp.fragments.EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/fragment_followers"
+        android:name="com.groove.megaapp.fragments.FollowersFragment"
+        tools:layout="@layout/fragment_followers">
+
+        <argument
+            android:name="user"
+            app:argType="integer" />
+
+        <argument
+            android:name="following"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_messages"
+        android:name="com.groove.megaapp.fragments.MessagesFragment"
+        tools:layout="@layout/fragment_messages">
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+        <argument
+            android:name="thread"
+            app:argType="integer" />
+
+        <deepLink app:uri=".*/messages?title={title}&amp;thread={thread}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_news"
+        android:name="com.groove.megaapp.fragments.NewsFragment"
+        tools:layout="@layout/fragment_news">
+
+        <deepLink app:uri=".*/news" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_notifications"
+        android:name="com.groove.megaapp.fragments.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications">
+
+        <deepLink app:uri=".*/notifications" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_photo_viewer"
+        android:name="com.groove.megaapp.fragments.PhotoViewerFragment"
+        tools:layout="@layout/fragment_photo_viewer">
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+        <argument
+            android:name="url"
+            app:argType="android.net.Uri" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_player_slider"
+        android:name="com.groove.megaapp.fragments.PlayerSliderFragment"
+        tools:layout="@layout/fragment_player_slider">
+
+        <argument
+            android:name="first"
+            app:argType="integer"
+            app:defaultValue="-1" />
+
+        <argument
+            android:name="params"
+            app:argType="android.os.Bundle"
+            app:nullable="true"
+            app:defaultValue="@null" />
+
+        <deepLink app:uri=".*/links/clips?first={first}" />
+        <deepLink app:uri=".*/links/clips" />
+        <deepLink app:uri=".*/clips?first={first}" />
+        <deepLink app:uri=".*/clips" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_player_tabs"
+        android:name="com.groove.megaapp.fragments.PlayerTabsFragment"
+        tools:layout="@layout/fragment_player_tabs" />
+
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.groove.megaapp.fragments.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+
+        <argument
+            android:name="user"
+            app:argType="integer" />
+
+        <deepLink app:uri=".*/links/users?user={user}" />
+        <deepLink app:uri=".*/users?user={user}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_profile_self"
+        android:name="com.groove.megaapp.fragments.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+
+        <deepLink app:uri=".*/profile" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_request_verification"
+        android:name="com.groove.megaapp.fragments.RequestVerificationFragment"
+        tools:layout="@layout/fragment_request_verification" />
+
+    <fragment
+        android:id="@+id/fragment_scan_qr"
+        android:name="com.groove.megaapp.fragments.ScanQrFragment"
+        tools:layout="@layout/fragment_scan_qr" />
+
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.groove.megaapp.fragments.SearchFragment"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/fragment_show_qr"
+        android:name="com.groove.megaapp.fragments.ShowQrFragment"
+        tools:layout="@layout/fragment_show_qr" />
+
+    <fragment
+        android:id="@+id/fragment_threads"
+        android:name="com.groove.megaapp.fragments.ThreadsFragment"
+        tools:layout="@layout/fragment_threads">
+
+        <deepLink app:uri=".*/threads" />
+
+    </fragment>
+
+</navigation>

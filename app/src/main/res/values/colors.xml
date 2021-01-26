@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6600cc</color>
+    <color name="colorPrimaryDark">#5E01BC</color>
+    <color name="colorAccent">#00c16e</color>
+    <color name="colorAccentDark">#00a04c</color>
+
+    <color name="colorButtonFacebook">#3b5998</color>
+    <color name="colorButtonGoogle">#ea4335</color>
+    <color name="colorButtonSms">#fbbc05</color>
+    <color name="colorButtonEmail">#008eaa</color>
+
+    <color name="colorLanguageIcon">#505050</color>
+    <color name="colorLanguageText">#ffffff</color>
+
+    <color name="colorLike">#e4002b</color>
+
+    <color name="colorNavigationBar">#505050</color>
+    <color name="colorNavigationActive">#fff</color>
+    <color name="colorNavigationInactive">#ccc</color>
+    <color name="colorNavigationMain">@color/colorPrimary</color>
+    <color name="colorNavigationMainPressed">@color/colorPrimaryDark</color>
+
+    <color name="colorPlayerProgressTrack">#55ffffff</color>
+    <color name="colorPlayerProgressFill">@android:color/white</color>
+
+    <color name="colorProfileBadge">@color/colorPrimary</color>
+
+    <color name="colorPromotionBackground">#505050</color>
+    <color name="colorPromotionText">#fff</color>
+
+    <color name="colorSpeedBackground">#99ffffff</color>
+
+</resources>
